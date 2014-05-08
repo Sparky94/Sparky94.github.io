@@ -10,8 +10,7 @@
 		<center>
 			<table width="50%">
 				<tr></tr>
-					<td></td>
-					<td align="center" colspan="2"><h1>M6INV</h1></td>
+					<td align="center" colspan="3"><h1>M6INV</h1></td>
 				<tr></tr>
 					<td align="center"><img src="Radio1b.gif"</td>
 					<td colspan="2"><p>Welcome to the website of M6INV, a website I hope to kep updated with tutorials, experiments and projects all relating to electronics and physics. I expect there will be a notable bias towards radio based projects - this is because radio is cool! I hope you enjoy the website and learn something new.</p></td>
@@ -42,7 +41,7 @@
 					<td colspan="2" align="center"><img src="Solder.gif"></td>
 				
 
-
+<img src="Solder.gif"></td>
 
 	
 			</table>
