@@ -20,6 +20,7 @@
 							<li><a href="Index.html">Home</a></li>
 							<li><a href=>Solar Flare Detector</a></li>
 							<li><a href="Introtoelectrodynamics.html">Brief Intro to Electrodynamics</a></li>
+							<li><a href="Satellitereceiverproject.html">Satellite Receiver Project</a></li>
 						</ul>
 					</td>
 					<td valign="top"><td bgcolor="696969"><p>On the left are links which will take you to specific pages I have written. In the future, when I have written more pages, I will organise them into seperate categories, but until then it seems silly to do so.</p>

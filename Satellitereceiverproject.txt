@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title align="centre">M6INV Home</title>
+		<title>M6INV Satellite Reciever Project</title>
 	</head>
 
 	<body>
@@ -17,15 +17,15 @@
 				<tr></tr>
 					<td width="20%" valign="top">		
 						<ul>
-							<li><a href="Index.html">Home</a></li>
+							<li><a href="Home.html">Home</a></li>
 							<li><a href=>Solar Flare Detector</a></li>
 							<li><a href="Introtoelectrodynamics.html">Brief Intro to Electrodynamics</a></li>
 						</ul>
 					</td>
-					<td valign="top"><td bgcolor="696969"><p>On the left are links which will take you to specific pages I have written. In the future, when I have written more pages, I will organise them into seperate categories, but until then it seems silly to do so.</p>
+					<td valign="top"><p>On the left are links which will take you to specific pages I have written. In the future, when I have written more pages, I will organise them into seperate categories, but until then it seems silly to do so.</p>
 							<p>I am currently working on a solar flare detector, which works on an interesting change in refractivity of the Earth's ionosphere. Check out the Solar Flare Detector project for more information.</p>
 							<p>In the future, I would like this website to carry tutorials on subjects ranging from electronic fundamentals to design, physics and anything that might interest people. If you have any ideas, please feel free to contact me when I get the website fully operational.</p>
-							</td></td>
+							</td>
 
 	
 			</table>
