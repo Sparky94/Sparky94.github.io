@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>M6INV Satellite Reciever Project</title>
+		<title>M6INV Satellite Receiver Project</title>
 	</head>
 
 	<body>
@@ -10,24 +10,86 @@
 		<center>
 			<table width="50%">
 				<tr></tr>
-					<td align="center" colspan="2"><h1>M6INV</h1></td>
+					<td align="center" colspan="4"><h1>M6INV Satellite Receiver Project</h1></td>
 				<tr></tr>
-					<td align="center"><img src="Radio1b.gif"</td>
-					<td colspan="2"><p>Welcome to the website of M6INV, which I hope to keep updated with interesting projects, tutorials, news, and links. Keep coming back for more!</p></td>
+					<td align="center"><img src="noaa11.gif" width="150" height="79"</td>
+					<td colspan="3"><p>This project aimed to receive downlink telemetry from weather satellites in orbit around Earth. Of most interest were the American NOAA satellites, which pass overhead several times a day, allowing for a number of images to be received.</p></td>
 				<tr></tr>
 					<td width="20%" valign="top">		
 						<ul>
-							<li><a href="Home.html">Home</a></li>
+							<li><a href="Index.html">Home</a></li>
 							<li><a href=>Solar Flare Detector</a></li>
 							<li><a href="Introtoelectrodynamics.html">Brief Intro to Electrodynamics</a></li>
+							<li><a href="Satellitereceiverproject.html">Satellite Receiver Project</a></li>
 						</ul>
 					</td>
-					<td valign="top"><p>On the left are links which will take you to specific pages I have written. In the future, when I have written more pages, I will organise them into seperate categories, but until then it seems silly to do so.</p>
-							<p>I am currently working on a solar flare detector, which works on an interesting change in refractivity of the Earth's ionosphere. Check out the Solar Flare Detector project for more information.</p>
-							<p>In the future, I would like this website to carry tutorials on subjects ranging from electronic fundamentals to design, physics and anything that might interest people. If you have any ideas, please feel free to contact me when I get the website fully operational.</p>
-							</td>
+					<td valign="top"><td bgcolor="696969" colspan="2"><p>Over the Christmas break of 2013, I decided to build my own receiver system. After some amount of research, I came across an open source 'hack' of digital TV dongles, which allows them to be used, via a computer, as a 
+					good quality SDR. Coupled with a satellite telemetry decoding program, I thought that this would make for an interesting project. I chose to use SDR# to 'hack' the DTV dongle, and WXtoimg to decode the telemetry. I have since learned that this combination 
+					seems to be popular amongst many similar projects, so it would appear to be a reliable combination of software.</p>
 
-	
+					<p>The currently operational NOAA Satellites (15,18, 19) operate on frequencies around 137MHz. The data is sent as a split phase signal, at around 8.3kbps. The signal is transmitted from a QFH antenna, which circularly polarises the signal. I therefore decided 
+					to build my own matching QFH antenna for best results. Using other, simpler antennas, such as four dipoles, would also work, however this could also reduce the effectiveness. I had a few weeks to spare, so I went with the more complicated QFH. I will write 
+					page at some point, with some QFH and circular polarisation theory.</p>
+
+					<p>The finished QFH is as in Figure 1. It measures around 0.55m high and 0.35m across. A simple balun is attached at the top of the antenna, which is protected from the elements by some plastic tops and rubber tubing. It was mounted about 4 meters off of the 
+					ground, which gave it a reasonable view of the horizon, despite being in a built up area. This was most important, as the quality and size of image depends of the the time the antenna can 'see' the satellite, before it passes behind a house, or the horizon. In 
+					end, I was able to get around ten minute passes, which allowed for some good quality photos. Interesting to note, that when I returned to university in the centre of Coventry, the reception was crystal clear form the top of a multistorey car park - bu constant 
+					pager activity drowned out the satellite's beacon. I was managing perhaps only four or six lines of imagery (3 seconds) before a pager would drown it out. Sadly, there's not much that can be done about that.</p>
+					</td>
+					
+				<tr></tr>
+					<td></td>
+					<td></td>
+					
+					<td align="center" colspan="2">
+					<br></br>
+					<p><img src="qfh1.gif" width="147" height="184"></p>
+					<p>Figure 1, the mounted QFH</p>
+					</td>
+				
+				<tr></tr>
+					<td></td>
+					<td></td>
+					
+					<td bgcolor="696969" colspan="2"><p>As can be seen, it was quite a wet winter, but this didn't make the images any less amazing. I used the satellite tracking program Orbitron to predict when the satellites would pass overhead. My first images were in the early hourse of the 
+					morning, so I was expecting only to get IR images - visible light images would have to wait until later. After allowing for factors such as doppler shift, I began to recieve telemetry from NOAA 19. For ten minutes, the familiar tick-tock of the telemtry was heard 
+					and recorded. It is quite a characteristic sound, with IR telemetry being sent through the 'tick' and visible being sent through the 'tock', at a rate of about 2 lines per second. After the satellite passed behind the horizon, WXtoimg kicked in and decoded the data. 
+					I could view the original data (Figure 2), which shows the visible light on the left image, and the IR on the right. From the IR data, one can plot cloud formations using artifical colour (Figure 3), and thermal data showing cloud and surface tempearture can be seen 
+					(Figure 4).</p>
+					</td>
+
+				<tr></tr>
+					<td></td>
+					<td></td>
+					
+					<td align="center" colspan="2">
+					<br></br>
+					<p><img src="imgorg.gif" width="520" height="202"></p>
+					<p>Figure 2, the original data</p>
+					</td>
+
+				<tr></tr>
+					<td></td>
+					<td></td>
+					<td align="center">
+					<br></br>
+					<p><img src="imgorg2.gif" width="260" height="202"></p>
+					<p>Figure 3, artifical colour imaging</p>
+					</td>
+					<td align="center">
+					<br></br>
+					<p><img src="imgorg3.gif" width="260" height="202"></p>
+					<p>Figure 4, cloud/surface temperatures</p>
+					</td>
+
+				<tr></tr>
+					<td></td>
+					<td></td>
+					<td bgcolor="696969" colspan="2"><p>Overall, this was a really exciting and interesting project. For around £60, I had built a setup capable of receiving telemetry from weather satellites. A bit of tweaking the software allowed me to autonomise the process to some degree. The software 
+					was able to 'turn on' the decoding software at right moment, meaning I could leave the system to run and receive images without input from myself.</p>
+					<p>I hope to return to the project in the future, and perhaps using a dedicated machine, autonomise the entire process of recording, saving, categorising and publishing the images online. If I do, I hope to share the details here."</p>
+					</td>
+
 			</table>
 		</center>
 	</body>
