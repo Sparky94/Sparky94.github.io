@@ -21,6 +21,7 @@
 							<li><a href=>Solar Flare Detector</a></li>
 							<li><a href="Introtoelectrodynamics.html">Brief Intro to Electrodynamics</a></li>
 							<li><a href="Satellitereceiverproject.html">Satellite Receiver Project</a></li>
+							<li><a href="PlasmaAntenna.html">Plasma Antennas</a></li>
 						</ul>
 					</td>
 					<td valign="top"><td bgcolor="696969" colspan="2"><p>Over the Christmas break of 2013, I decided to build my own receiver system. After some amount of research, I came across an open source 'hack' of digital TV dongles, which allows them to be used, via a computer, as a 

@@ -21,6 +21,7 @@
 							<li><a href=>Solar Flare Detector</a></li>
 							<li><a href=>Brief Intro to Electrodynamics</a></li>
 							<li><a href="Satellitereceiverproject.html">Satellite Receiver Project</a></li>
+							<li><a href="PlasmaAntenna.html">Plasma Antennas</a></li>
 						</ul>
 					</td>
 					<td valign="top" align="center"><img src="Magnet1.gif" 
